@@ -45,10 +45,36 @@ dependencies:
   image_picker: ^1.0.6
   iconsax: ^0.0.8
   flutter_rating_bar: ^4.0.1
+  flutter_launcher_icons: ^0.13.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/Images/icon.png"
+  min_sdk_android: 19 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/Images/icon.png"
+    background_color: "#0x000000"
+    theme_color: "#0x000000"
+  windows:
+    generate: true
+    image_path: "assets/Images/icon.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/Images/icon.png"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
